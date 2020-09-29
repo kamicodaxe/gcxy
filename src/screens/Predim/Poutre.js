@@ -9,6 +9,8 @@ import {
   Picker,
   Button
   } from 'react-native';
+import InputGroup from '../../components/InputGroup';
+import Input from '../../components/Input';
 
 
 export default class PredimPoutre extends React.Component {
@@ -40,28 +42,26 @@ export default class PredimPoutre extends React.Component {
   render() {
     return (
     <View style={styles.container}>
-      <View style={styles.formGroup}>
-        <TextInput 
-        style={{ height: 48 }} 
-        placeholder='Largeur du mur ou des poteau'
-        keyboardType='numeric'
-        onChangeText={t => this.setState({ b: t })}
-         />
-      </View>
-      <View style={styles.formGroup}>
-        <TextInput 
-        style={{ height: 48 }} 
-        placeholder='Longeur de la poutre'
-        keyboardType='numeric'
-        onChangeText={t => this.setState({ l: t })}
-         />
-      </View>
+      <InputGroup>
+        <Input 
+          label="Largeur du mur"
+          unit="m"
+          onInput={t => this.setState({ b: t })}
+        />
+        <Input 
+          label="Longeur de la poutre"
+          unit="m"
+          onInput={t => this.setState({ l: t })}
+        />
+      </InputGroup>
+      
       <View style={styles.formGroup}>
         <Text>Type de poutre: </Text>
         <Picker
         selectedValue={this.state.selectedValue}
-        style={{ height: 50, width: "100%" }}
+        style={{ height: 42, width: "100%" }}
         onValueChange={(itemValue, itemIndex) => this.setSelectedValue(itemValue)}
+        mode="dropdown"
       >
         <Picker.Item label="Iso" value="iso" />
         <Picker.Item label="Cont_int" value="cont_int" />
@@ -114,8 +114,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginHorizontal: 8,
     marginVertical: 4,
-    borderWidth: 1,
-    borderColor: 'rgba(0,0,0,0.6)'
+    // borderWidth: 1,
+    // borderColor: 'rgba(0,0,0,0.6)',
+    borderRadius: 4,
+    backgroundColor: "white"
   },
 
 });

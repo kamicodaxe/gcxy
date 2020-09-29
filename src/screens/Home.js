@@ -9,6 +9,10 @@ const ROUTES = [
     {
         title: 'Décente des charges',
         routeName: 'DCharges',
+    },
+    {
+        title: 'MDM',
+        routeName: 'MDM',
     }
 ]
 

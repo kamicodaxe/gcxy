@@ -31,6 +31,7 @@ import PredimPoteau from './src/screens/Predim/Poteau';
 import PredimDalle from './src/screens/Predim/Dalle';
 import PredimSemelle from './src/screens/Predim/Semelle';
 import DCharges from './src/screens/DCharges';
+import MDM from './src/screens/MDM';
 
 
 
@@ -42,6 +43,7 @@ const App: () => React$Node = () => {
       <StatusBar barStyle="dark-content" />
       <Stack.Navigator>
         <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="MDM" component={MDM} />
         <Stack.Screen name="Predim" component={PredimScreen} />
         <Stack.Screen name="PredimPoutre" component={PredimPoutre} />
         <Stack.Screen name="PredimPoteau" component={PredimPoteau} />
