@@ -44,12 +44,12 @@ export default class PredimPoutre extends React.Component {
     <View style={styles.container}>
       <InputGroup>
         <Input 
-          label="Largeur du mur"
+          label="Largeur mur"
           unit="m"
           onInput={t => this.setState({ b: t })}
         />
         <Input 
-          label="Longeur de la poutre"
+          label="Longeur poutre"
           unit="m"
           onInput={t => this.setState({ l: t })}
         />

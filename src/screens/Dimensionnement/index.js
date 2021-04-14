@@ -3,26 +3,13 @@ import { View, Text, StyleSheet, TouchableHighlight } from 'react-native';
 
 const ROUTES = [
     {
-        title: 'Pré-dimensionnement',
-        routeName: 'Predim',
-    },
-    {
-        title: 'Décente des charges',
-        routeName: 'DCharges',
-    },
-    {
-        title: 'Dimensionnement',
-        routeName: 'Dimensionnement',
-    },
-    {
-        title: 'MDM',
-        routeName: 'MDM',
+        title: 'Dimensionnement de la poutre',
+        routeName: 'DimPoutre',
     }
 ]
 
 
-class HomeScreen extends React.PureComponent {
-
+class Dimensionnement extends React.PureComponent {
 
     render() {
         let { navigation } = this.props
@@ -51,8 +38,8 @@ const styles = StyleSheet.create({
         paddingVertical: 16
     },
     listTitle: {
-        fontSize: 16
+        fontSize: 18
     }
 })
 
-export default HomeScreen;
+export default Dimensionnement;

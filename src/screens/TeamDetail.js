@@ -3,16 +3,12 @@ import { View, Text, StyleSheet, TouchableHighlight } from 'react-native';
 
 const ROUTES = [
     {
-        title: 'Pré-dimensionnement',
+        title: 'Prédim',
         routeName: 'Predim',
     },
     {
         title: 'Décente des charges',
         routeName: 'DCharges',
-    },
-    {
-        title: 'Dimensionnement',
-        routeName: 'Dimensionnement',
     },
     {
         title: 'MDM',
@@ -21,7 +17,7 @@ const ROUTES = [
 ]
 
 
-class HomeScreen extends React.PureComponent {
+class TeamDetail extends React.PureComponent {
 
 
     render() {
@@ -55,4 +51,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default HomeScreen;
+export default TeamDetail;

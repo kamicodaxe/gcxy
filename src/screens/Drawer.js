@@ -3,25 +3,21 @@ import { View, Text, StyleSheet, TouchableHighlight } from 'react-native';
 
 const ROUTES = [
     {
-        title: 'Pré-dimensionnement',
-        routeName: 'Predim',
+        title: 'Accueil',
+        routeName: 'Home',
     },
     {
-        title: 'Décente des charges',
-        routeName: 'DCharges',
+        title: 'Notre équipe',
+        routeName: 'Team',
     },
     {
-        title: 'Dimensionnement',
-        routeName: 'Dimensionnement',
-    },
-    {
-        title: 'MDM',
-        routeName: 'MDM',
+        title: 'A propos',
+        routeName: 'About',
     }
 ]
 
 
-class HomeScreen extends React.PureComponent {
+class Drawer extends React.PureComponent {
 
 
     render() {
@@ -32,7 +28,10 @@ class HomeScreen extends React.PureComponent {
                     ROUTES.map((item, index) => (
                         <TouchableHighlight 
                         key={index}
-                        onPress={() => navigation.push(item.routeName)}
+                        onPress={() => {
+                            navigation.pop()
+                            navigation.push(item.routeName)
+                        }}
                         >
                             <View style={styles.listContainer}>
                                 <Text style={styles.listTitle}>{item.title}</Text>
@@ -55,4 +54,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default HomeScreen;
+export default Drawer;

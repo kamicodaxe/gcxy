@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
         paddingVertical: 16
     },
     listTitle: {
-        fontSize: 16
+        fontSize: 18
     }
 })
 
