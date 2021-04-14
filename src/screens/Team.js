@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, Image, ScrollView } from 'react-native';
 const ROUTES = [
     {
         title: 'Harold TASSE LOUOKDOM',
-        img: require('../assets/images/01.jpeg'),
+        img: require('../assets/images/01.jpg'),
     },
     {
         title: 'Kami Mbougo Loïc Ruvice',
