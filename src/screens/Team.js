@@ -3,6 +3,10 @@ import { View, Text, StyleSheet, Image, ScrollView } from 'react-native';
 
 const ROUTES = [
     {
+        title: 'Harold TASSE LOUOKDOM',
+        img: require('../assets/images/01.jpeg'),
+    },
+    {
         title: 'Kami Mbougo Loïc Ruvice',
         img: require('../assets/images/00.jpeg'),
         email : "kamiruvice@gmail.com",
